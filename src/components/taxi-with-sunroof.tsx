@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react"
-import "./taxi-styles.css"
+import "./css/taxi-styles.css"
 
 interface TaxiWithSunroofProps {
     sunroofState: "closed" | "opening" | "closing" | "opened"
@@ -22,6 +22,7 @@ export default function TaxiWithSunroof({ sunroofState, onAnimationEnd }: TaxiWi
     return (
         <div className="road">
             <div className="taxi">
+                <div className="placa"/>
                 <div className="light" />
                 <span>
                     <b>
